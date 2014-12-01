@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D30FD4BD1A28C00F00F7589F /* CoreDataTutorial2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D30FD4BC1A28C00F00F7589F /* CoreDataTutorial2.sqlite */; };
+		D359B0271A288E6A008D0CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D359B0261A288E6A008D0CA8 /* main.m */; };
+		D359B02D1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D359B02B1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld */; };
+		D359B0361A288E6B008D0CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D359B0341A288E6B008D0CA8 /* Main.storyboard */; };
+		D359B0381A288E6B008D0CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D359B0371A288E6B008D0CA8 /* Images.xcassets */; };
+		D359B03B1A288E6B008D0CA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D359B0391A288E6B008D0CA8 /* LaunchScreen.xib */; };
+		D359B0471A288E6B008D0CA8 /* FailedBankCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D359B0461A288E6B008D0CA8 /* FailedBankCDTests.m */; };
+		D359B0541A288EC3008D0CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D359B0521A288EC3008D0CA8 /* AppDelegate.m */; };
+		D359B0641A28A033008D0CA8 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D359B0631A28A033008D0CA8 /* MasterViewController.m */; };
+		D38A23611A2CBA2700347000 /* BankDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A23601A2CBA2700347000 /* BankDetailViewController.m */; };
+		D38A23671A2CC69C00347000 /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A23661A2CC69C00347000 /* FailedBankDetails.m */; };
+		D38A236A1A2CC69C00347000 /* FailedBankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A23691A2CC69C00347000 /* FailedBankInfo.m */; };
+		D38A236D1A2CC69C00347000 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A236C1A2CC69C00347000 /* Tag.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D359B0411A288E6B008D0CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D359B0191A288E6A008D0CA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D359B0201A288E6A008D0CA8;
+			remoteInfo = FailedBankCD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D30FD4BC1A28C00F00F7589F /* CoreDataTutorial2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreDataTutorial2.sqlite; sourceTree = "<group>"; };
+		D359B0211A288E6A008D0CA8 /* FailedBankCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FailedBankCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D359B0251A288E6A008D0CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D359B0261A288E6A008D0CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D359B02C1A288E6A008D0CA8 /* FailedBankCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FailedBankCD.xcdatamodel; sourceTree = "<group>"; };
+		D359B0351A288E6B008D0CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D359B0371A288E6B008D0CA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D359B03A1A288E6B008D0CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D359B0401A288E6B008D0CA8 /* FailedBankCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FailedBankCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D359B0451A288E6B008D0CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D359B0461A288E6B008D0CA8 /* FailedBankCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FailedBankCDTests.m; sourceTree = "<group>"; };
+		D359B0511A288EC3008D0CA8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D359B0521A288EC3008D0CA8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D359B0621A28A033008D0CA8 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		D359B0631A28A033008D0CA8 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D38A235F1A2CBA2700347000 /* BankDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankDetailViewController.h; sourceTree = "<group>"; };
+		D38A23601A2CBA2700347000 /* BankDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankDetailViewController.m; sourceTree = "<group>"; };
+		D38A23651A2CC69C00347000 /* FailedBankDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDetails.h; sourceTree = "<group>"; };
+		D38A23661A2CC69C00347000 /* FailedBankDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDetails.m; sourceTree = "<group>"; };
+		D38A23681A2CC69C00347000 /* FailedBankInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankInfo.h; sourceTree = "<group>"; };
+		D38A23691A2CC69C00347000 /* FailedBankInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankInfo.m; sourceTree = "<group>"; };
+		D38A236B1A2CC69C00347000 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		D38A236C1A2CC69C00347000 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D359B01E1A288E6A008D0CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D359B03D1A288E6B008D0CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D359B0181A288E6A008D0CA8 = {
+			isa = PBXGroup;
+			children = (
+				D359B0231A288E6A008D0CA8 /* FailedBankCD */,
+				D359B0431A288E6B008D0CA8 /* FailedBankCDTests */,
+				D359B0221A288E6A008D0CA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D359B0221A288E6A008D0CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0211A288E6A008D0CA8 /* FailedBankCD.app */,
+				D359B0401A288E6B008D0CA8 /* FailedBankCDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D359B0231A288E6A008D0CA8 /* FailedBankCD */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0501A288EC3008D0CA8 /* Classes */,
+				D359B0341A288E6B008D0CA8 /* Main.storyboard */,
+				D359B0371A288E6B008D0CA8 /* Images.xcassets */,
+				D359B0391A288E6B008D0CA8 /* LaunchScreen.xib */,
+				D359B02B1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld */,
+				D30FD4BC1A28C00F00F7589F /* CoreDataTutorial2.sqlite */,
+				D359B0241A288E6A008D0CA8 /* Supporting Files */,
+			);
+			path = FailedBankCD;
+			sourceTree = "<group>";
+		};
+		D359B0241A288E6A008D0CA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0251A288E6A008D0CA8 /* Info.plist */,
+				D359B0261A288E6A008D0CA8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D359B0431A288E6B008D0CA8 /* FailedBankCDTests */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0461A288E6B008D0CA8 /* FailedBankCDTests.m */,
+				D359B0441A288E6B008D0CA8 /* Supporting Files */,
+			);
+			path = FailedBankCDTests;
+			sourceTree = "<group>";
+		};
+		D359B0441A288E6B008D0CA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0451A288E6B008D0CA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D359B0501A288EC3008D0CA8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0511A288EC3008D0CA8 /* AppDelegate.h */,
+				D359B0521A288EC3008D0CA8 /* AppDelegate.m */,
+				D359B0581A289D1E008D0CA8 /* Model */,
+				D359B0531A288EC3008D0CA8 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D359B0531A288EC3008D0CA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D359B0621A28A033008D0CA8 /* MasterViewController.h */,
+				D359B0631A28A033008D0CA8 /* MasterViewController.m */,
+				D38A235F1A2CBA2700347000 /* BankDetailViewController.h */,
+				D38A23601A2CBA2700347000 /* BankDetailViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D359B0581A289D1E008D0CA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D38A236B1A2CC69C00347000 /* Tag.h */,
+				D38A236C1A2CC69C00347000 /* Tag.m */,
+				D38A23681A2CC69C00347000 /* FailedBankInfo.h */,
+				D38A23691A2CC69C00347000 /* FailedBankInfo.m */,
+				D38A23651A2CC69C00347000 /* FailedBankDetails.h */,
+				D38A23661A2CC69C00347000 /* FailedBankDetails.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D359B0201A288E6A008D0CA8 /* FailedBankCD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D359B04A1A288E6B008D0CA8 /* Build configuration list for PBXNativeTarget "FailedBankCD" */;
+			buildPhases = (
+				D359B01D1A288E6A008D0CA8 /* Sources */,
+				D359B01E1A288E6A008D0CA8 /* Frameworks */,
+				D359B01F1A288E6A008D0CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FailedBankCD;
+			productName = FailedBankCD;
+			productReference = D359B0211A288E6A008D0CA8 /* FailedBankCD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D359B03F1A288E6B008D0CA8 /* FailedBankCDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D359B04D1A288E6B008D0CA8 /* Build configuration list for PBXNativeTarget "FailedBankCDTests" */;
+			buildPhases = (
+				D359B03C1A288E6B008D0CA8 /* Sources */,
+				D359B03D1A288E6B008D0CA8 /* Frameworks */,
+				D359B03E1A288E6B008D0CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D359B0421A288E6B008D0CA8 /* PBXTargetDependency */,
+			);
+			name = FailedBankCDTests;
+			productName = FailedBankCDTests;
+			productReference = D359B0401A288E6B008D0CA8 /* FailedBankCDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D359B0191A288E6A008D0CA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = weblify;
+				TargetAttributes = {
+					D359B0201A288E6A008D0CA8 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D359B03F1A288E6B008D0CA8 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D359B0201A288E6A008D0CA8;
+					};
+				};
+			};
+			buildConfigurationList = D359B01C1A288E6A008D0CA8 /* Build configuration list for PBXProject "FailedBankCD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D359B0181A288E6A008D0CA8;
+			productRefGroup = D359B0221A288E6A008D0CA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D359B0201A288E6A008D0CA8 /* FailedBankCD */,
+				D359B03F1A288E6B008D0CA8 /* FailedBankCDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D359B01F1A288E6A008D0CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D359B0361A288E6B008D0CA8 /* Main.storyboard in Resources */,
+				D30FD4BD1A28C00F00F7589F /* CoreDataTutorial2.sqlite in Resources */,
+				D359B03B1A288E6B008D0CA8 /* LaunchScreen.xib in Resources */,
+				D359B0381A288E6B008D0CA8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D359B03E1A288E6B008D0CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D359B01D1A288E6A008D0CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D359B02D1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld in Sources */,
+				D38A23671A2CC69C00347000 /* FailedBankDetails.m in Sources */,
+				D359B0271A288E6A008D0CA8 /* main.m in Sources */,
+				D359B0541A288EC3008D0CA8 /* AppDelegate.m in Sources */,
+				D38A236D1A2CC69C00347000 /* Tag.m in Sources */,
+				D38A23611A2CBA2700347000 /* BankDetailViewController.m in Sources */,
+				D359B0641A28A033008D0CA8 /* MasterViewController.m in Sources */,
+				D38A236A1A2CC69C00347000 /* FailedBankInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D359B03C1A288E6B008D0CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D359B0471A288E6B008D0CA8 /* FailedBankCDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D359B0421A288E6B008D0CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D359B0201A288E6A008D0CA8 /* FailedBankCD */;
+			targetProxy = D359B0411A288E6B008D0CA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D359B0341A288E6B008D0CA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D359B0351A288E6B008D0CA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D359B0391A288E6B008D0CA8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D359B03A1A288E6B008D0CA8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D359B0481A288E6B008D0CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D359B0491A288E6B008D0CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D359B04B1A288E6B008D0CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FailedBankCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D359B04C1A288E6B008D0CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FailedBankCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D359B04E1A288E6B008D0CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FailedBankCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FailedBankCD.app/FailedBankCD";
+			};
+			name = Debug;
+		};
+		D359B04F1A288E6B008D0CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FailedBankCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FailedBankCD.app/FailedBankCD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D359B01C1A288E6A008D0CA8 /* Build configuration list for PBXProject "FailedBankCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D359B0481A288E6B008D0CA8 /* Debug */,
+				D359B0491A288E6B008D0CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D359B04A1A288E6B008D0CA8 /* Build configuration list for PBXNativeTarget "FailedBankCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D359B04B1A288E6B008D0CA8 /* Debug */,
+				D359B04C1A288E6B008D0CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D359B04D1A288E6B008D0CA8 /* Build configuration list for PBXNativeTarget "FailedBankCDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D359B04E1A288E6B008D0CA8 /* Debug */,
+				D359B04F1A288E6B008D0CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D359B02B1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D359B02C1A288E6A008D0CA8 /* FailedBankCD.xcdatamodel */,
+			);
+			currentVersion = D359B02C1A288E6A008D0CA8 /* FailedBankCD.xcdatamodel */;
+			path = FailedBankCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D359B0191A288E6A008D0CA8 /* Project object */;
+}
