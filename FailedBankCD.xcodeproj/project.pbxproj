@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D30FD4BD1A28C00F00F7589F /* CoreDataTutorial2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D30FD4BC1A28C00F00F7589F /* CoreDataTutorial2.sqlite */; };
+		D34937571A2DA8A70004BAB2 /* TagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34937561A2DA8A70004BAB2 /* TagTableViewController.m */; };
 		D359B0271A288E6A008D0CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D359B0261A288E6A008D0CA8 /* main.m */; };
 		D359B02D1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D359B02B1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld */; };
 		D359B0361A288E6B008D0CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D359B0341A288E6B008D0CA8 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		D38A23671A2CC69C00347000 /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A23661A2CC69C00347000 /* FailedBankDetails.m */; };
 		D38A236A1A2CC69C00347000 /* FailedBankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A23691A2CC69C00347000 /* FailedBankInfo.m */; };
 		D38A236D1A2CC69C00347000 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A236C1A2CC69C00347000 /* Tag.m */; };
+		D393C1FB1A2DB53E00A5C119 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D393C1FA1A2DB53E00A5C119 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		D30FD4BC1A28C00F00F7589F /* CoreDataTutorial2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreDataTutorial2.sqlite; sourceTree = "<group>"; };
+		D34937551A2DA8A70004BAB2 /* TagTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagTableViewController.h; sourceTree = "<group>"; };
+		D34937561A2DA8A70004BAB2 /* TagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagTableViewController.m; sourceTree = "<group>"; };
 		D359B0211A288E6A008D0CA8 /* FailedBankCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FailedBankCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D359B0251A288E6A008D0CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D359B0261A288E6A008D0CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		D38A23691A2CC69C00347000 /* FailedBankInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankInfo.m; sourceTree = "<group>"; };
 		D38A236B1A2CC69C00347000 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		D38A236C1A2CC69C00347000 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		D393C1F91A2DB53E00A5C119 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		D393C1FA1A2DB53E00A5C119 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,10 @@
 				D359B0631A28A033008D0CA8 /* MasterViewController.m */,
 				D38A235F1A2CBA2700347000 /* BankDetailViewController.h */,
 				D38A23601A2CBA2700347000 /* BankDetailViewController.m */,
+				D34937551A2DA8A70004BAB2 /* TagTableViewController.h */,
+				D34937561A2DA8A70004BAB2 /* TagTableViewController.m */,
+				D393C1F91A2DB53E00A5C119 /* SearchViewController.h */,
+				D393C1FA1A2DB53E00A5C119 /* SearchViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,9 +282,11 @@
 			files = (
 				D359B02D1A288E6A008D0CA8 /* FailedBankCD.xcdatamodeld in Sources */,
 				D38A23671A2CC69C00347000 /* FailedBankDetails.m in Sources */,
+				D393C1FB1A2DB53E00A5C119 /* SearchViewController.m in Sources */,
 				D359B0271A288E6A008D0CA8 /* main.m in Sources */,
 				D359B0541A288EC3008D0CA8 /* AppDelegate.m in Sources */,
 				D38A236D1A2CC69C00347000 /* Tag.m in Sources */,
+				D34937571A2DA8A70004BAB2 /* TagTableViewController.m in Sources */,
 				D38A23611A2CBA2700347000 /* BankDetailViewController.m in Sources */,
 				D359B0641A28A033008D0CA8 /* MasterViewController.m in Sources */,
 				D38A236A1A2CC69C00347000 /* FailedBankInfo.m in Sources */,

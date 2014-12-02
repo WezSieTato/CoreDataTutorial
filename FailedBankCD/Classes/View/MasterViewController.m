@@ -10,6 +10,7 @@
 #import "FailedBankInfo.h"
 #import "FailedBankDetails.h"
 #import "BankDetailViewController.h"
+#import "SearchViewController.h"
 
 @interface MasterViewController () <NSFetchedResultsControllerDelegate>
 
@@ -28,14 +29,7 @@
     }
     
     self.title = @"Failed Banks";
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                                          target:self
-                                                                                          action:@selector(addBank)];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
-                                                                                           target:self
-                                                                                           action:@selector(showSearch)];
+
 }
 
 -(void)viewDidUnload{
@@ -47,7 +41,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)addBank {
+-(IBAction)addBank {
     
     FailedBankInfo *failedBankInfo = (FailedBankInfo *)[NSEntityDescription insertNewObjectForEntityForName:@"FailedBankInfo"
                                                                                      inManagedObjectContext:_managedObjectContext];
@@ -89,7 +83,7 @@
     cell.textLabel.text = info.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",
                                  info.city, info.state];
-    cell.tag = [indexPath row];
+    cell.tag = (NSInteger)objc_unretainedPointer(info); // (NSInteger)info;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -234,11 +228,16 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    UITableViewCell* cell = (UITableViewCell*)sender;
-    NSIndexPath* index = [NSIndexPath indexPathForRow:cell.tag inSection:0];// cell.tag
-    FailedBankInfo* info = [_fetchedResultsController objectAtIndexPath:index];
-    [(BankDetailViewController*)segue.destinationViewController setBankInfo:info];
+    if([sender isKindOfClass:[UITableViewCell class]]){
+        UITableViewCell* cell = (UITableViewCell*)sender;
+//        NSIndexPath* index = [NSIndexPath indexPathForRow:cell.tag inSection:0];// cell.tag
+        FailedBankInfo* info = objc_unretainedObject(cell.tag);// (FailedBankInfo*)cell.tag;
+        //[_fetchedResultsController objectAtIndexPath:index];
+        [(BankDetailViewController*)segue.destinationViewController setBankInfo:info];
+    } else {
+        SearchViewController* searchViewController = (SearchViewController*)segue.destinationViewController;
+        searchViewController.managedObjectContext = _managedObjectContext;
+    }
     
 }
 

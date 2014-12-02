@@ -8,6 +8,8 @@
 
 #import "BankDetailViewController.h"
 #import "FailedBankDetails.h"
+#import "Tag.h"
+#import "TagTableViewController.h"
 
 @interface BankDetailViewController ()
 
@@ -30,21 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.title = self.bankInfo.name;
-    
-    // 1 - setting the right button
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
-                                                                                           target:self action:@selector(saveBankInfo)];
-    
-    // 2 - setting interaction on date label
-    self.dateLabel.userInteractionEnabled = YES;
-    UITapGestureRecognizer *dateTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                        action:@selector(dateTapped)];
-    [self.dateLabel addGestureRecognizer:dateTapRecognizer];
-    // 3 - set date picker handler
-    [self.datePicker addTarget:self action:@selector(dateHasChanged:)
-         forControlEvents:UIControlEventValueChanged];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -56,30 +44,49 @@
     self.stateField.text = self.bankInfo.state;
     
     self.datePicker.layer.opacity = 0;
-
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
     self.dateLabel.text = [formatter stringFromDate:self.bankInfo.details.closeDate];
     self.datePicker.date = self.bankInfo.details.closeDate;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(hidePicker)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    NSSet *tags = self.bankInfo.details.tags;
+    if([tags count]){
+    NSMutableArray *tagNamesArray = [[NSMutableArray alloc] initWithCapacity:tags.count];
+    for (Tag *tag in tags) {
+        [tagNamesArray addObject:tag.name];
+    }
+    self.tagsLabel.text = [tagNamesArray componentsJoinedByString:@", "];
+    } else {
+        self.tagsLabel.text = @"Tags";
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIKeyboardWillShowNotification
+                                                  object:nil];
 }
-
-/*
-#pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    TagTableViewController* tagViewController = segue.destinationViewController;
+    tagViewController.bankDetails = self.bankInfo.details;
+    
 }
-*/
 
--(void)saveBankInfo {
+-(IBAction)saveBankInfo {
     
     self.bankInfo.name = self.nameField.text;
     self.bankInfo.city = self.cityField.text;
@@ -96,22 +103,18 @@
     
 }
 
--(void)dateTapped {
+-(IBAction)dateTapped {
     [self showPicker];
 }
 
--(void)dateHasChanged:(id)sender {
+-(IBAction)dateHasChanged:(id)sender {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
     self.dateLabel.text = [formatter stringFromDate:self.datePicker.date];
-    
 }
 
 -(void)showPicker {
-    [self.zipField resignFirstResponder];
-    [self.nameField resignFirstResponder];
-    [self.stateField resignFirstResponder];
-    [self.cityField resignFirstResponder];
+    [self.view endEditing:YES];
     
     [UIView beginAnimations:@"SlideInPicker" context:nil];
     [UIView setAnimationDuration:0.5];
